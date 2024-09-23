@@ -144,16 +144,16 @@ def gerar_grafico_estudo( dados, ano, mes ):
   return Figura3
 
 # Carregando os dados
-dados_bignumbers = pd.read_parquet('./elementos/dados/dados_bignumber.parquet')
-dados_serietemporal = pd.read_parquet('./elementos/dados/dados_serietemporal.parquet')
-dados_boxplot = pd.read_parquet('./elementos/dados/dados_boxplot.parquet')
-dados_estudo = pd.read_parquet('./elementos/dados/dados_estudo.parquet')
+dados_bignumbers = pd.read_parquet('dados_bignumber.parquet')
+dados_serietemporal = pd.read_parquet('dados_serietemporal.parquet')
+dados_boxplot = pd.read_parquet('dados_boxplot.parquet')
+dados_estudo = pd.read_parquet('dados_estudo.parquet')
 
 # Título e Subtítulo
 st.set_page_config(page_title='Data Viking', page_icon='📊', layout='wide')
 
 # Sidebar Superior
-st.sidebar.image('./elementos/imagens/logo_enefit.png', use_column_width=True)
+st.sidebar.image('logo_enefit.png', use_column_width=True)
 st.sidebar.title('Analytics')
 
 # Menu Lateral
